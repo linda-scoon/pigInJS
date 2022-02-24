@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="wclassth=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lscoondicegame.css" />
+    <title>Play</title>
+  </head>
+  <body>
+    <h1>Dice Game</h1>
+    <div class="wrapper">
+      <!-- show both players scores above at all times -->
+      <!-- generate from loop in js -->
+      <div id="score_tracker">
+        <!-- next to each other -->
+        <h2 id="player_name"></h2>
+        <!-- this should be current score -->
+        <h2 id="score"></h2>
+        <!-- next to each other -->
+        <button id="dice_btn">ROLL DICE</button>
+        <button id="end_turn">END TURN</button>
+        <!-- fade this msg below in css -->
+        <p id="msg"></p>
+      </div>
+
+      <div id="play_again">
+        <p class="score">Game Over</p>
+        <button>PLAY AGAIN</button>
+      </div>
+
+      <div id="die">
+        <div class="dice"><div class="centre dots"></div></div>
+        <div class="dice">
+          <div class="top_right dots"></div>
+          <div class="bottom_left dots"></div>
+        </div>
+        <div class="dice">
+          <div class="top_right dots"></div>
+          <div class="centre dots"></div>
+          <div class="bottom_left dots"></div>
+        </div>
+        <div class="dice">
+          <div class="top_right dots"></div>
+          <div class="top_left dots"></div>
+          <div class="bottom_left dots"></div>
+          <div class="bottom_right dots"></div>
+        </div>
+        <div class="dice">
+          <div class="top_right dots"></div>
+          <div class="top_left dots"></div>
+          <div class="centre dots"></div>
+          <div class="bottom_left dots"></div>
+          <div class="bottom_right dots"></div>
+        </div>
+        <div class="dice">
+          <div class="top_right dots"></div>
+          <div class="right_centre dots"></div>
+          <div class="top_left dots"></div>
+          <div class="bottom_left dots"></div>
+          <div class="left_centre dots"></div>
+          <div class="bottom_right dots"></div>
+        </div>
+      </div>
+    </div>
+    <script src="lscoondicegame.js"></script>
+  </body>
+</html>

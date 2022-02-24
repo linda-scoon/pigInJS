@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lscoondicegame.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Dice Game</h1>
+      <button>READ RULES</button>
+      <div id="rules">
+        <h2>How to play</h2>
+        <p>
+          This game allows two users to play against each other. The goal of the
+          game is to be the first person to acquire thirty points. Both players
+          start with zero points and take turns. When it is Player 1's turn,
+          they can throw the pair of dice as many times as they want adding the
+          total of each throw to their score. Player 1 can choose to stop
+          throwing at any point, if they stop throwing then their score is added
+          to their overall total. If Player 1 does not stop and throws one of
+          the dice with a six, then Player 1's turn ends and Player 1 gets 0
+          added to their score. If Player 1 is still throwing and they throw
+          double sixes, then Player 1's overall total score goes back to 0.
+          (i.e., not only does Player 1 lose the scores from this round but they
+          lose all the points they have accumulated in previous rounds). You may
+          choose to have the double sixes rule striken and let a double six be
+          the same as a single six.
+        </p>
+      </div>
+      <label>Enter firts players name</label>
+      <input type="text" id="player1" />
+      <label>Enter second players name</label>
+      <input type="text" id="player2" />
+
+      <input type="checkbox" id="dblSixes" />
+      <label>Remove double sixes rule</label>
+      <button>PLAY</button>
+    </div>
+    <script src="lscoondicegame.js"></script>
+  </body>
+</html>

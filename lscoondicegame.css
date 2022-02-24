@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  font-size: 100px;
+}
+
+.wrapper {
+  height: 120vh;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#rules {
+  display: none;
+}
+
+#score_tracker {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#score_tracker h3 {
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100px;
+}
+#score_tracker button {
+  border-radius: 20px;
+  width: 200px;
+  height: 70px;
+}
+#score_tracker h2 {
+  padding: 20px;
+}
+
+#play_again{
+  display: none;
+}
+
+#die {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* DICE */
+.dice {
+  border: 1px solid;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  position: relative;
+  display: none;
+}
+.dots {
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 50px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+}
+.top_right {
+  left: 134px;
+  top: 20px;
+}
+.top_left {
+  top: 20px;
+  left: 20px;
+}
+.bottom_left {
+  top: 130px;
+  left: 20px;
+}
+.bottom_right {
+  left: 135px;
+  top: 130px;
+}
+.centre {
+  top: 75px;
+  left: 80px;
+}
+.left_centre {
+  top: 75px;
+  left: 20px;
+}
+.right_centre {
+  top: 75px;
+  left: 135px;
+}
+
+@media screen and (max-width: 800px) {
+  #die {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+}
