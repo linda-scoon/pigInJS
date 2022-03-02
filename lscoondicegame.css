@@ -17,27 +17,27 @@ h1 {
   display: none;
 }
 
-#score_tracker {
+.score_tracker {
   display: flex;
   justify-content: space-evenly;
 }
 
-#score_tracker h3 {
+.score_tracker h3 {
   border: 2px solid black;
   padding: 20px;
   border-radius: 20px;
   width: 100px;
 }
-#score_tracker button {
+.score_tracker button {
   border-radius: 20px;
   width: 200px;
   height: 70px;
 }
-#score_tracker h2 {
+.score_tracker h2 {
   padding: 20px;
 }
 
-#play_again{
+#replay{
   display: none;
 }
 

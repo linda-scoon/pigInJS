@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="wclassth=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lscoondicegame.css" />
+    <script src="lscoondicegame2.js"></script>
+    <title>Play</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Dice Game</h1>
+
+      <div>
+        <p id="player1"></p>
+        <p id="player1_score"></p>
+        <p id="player2"></p>
+        <p id="player2_score"></p>
+        <!-- fade this msg below in css -->
+        <p class="msg"></p>
+      </div>
+
+      <div class="score_tracker">
+        <h2 id="current_player"></h2>
+        <h2 id="score"></h2>
+      </div>
+
+      <div class="score_tracker">
+        <button id="dice_btn">ROLL DICE</button>
+        <button id="end_turn">END TURN</button>
+      </div>
+
+      <div id="die">
+        <div class="dice"><div class="centre dots"></div></div>
+        <div class="dice">
+          <div class="top_right dots"></div>
+          <div class="bottom_left dots"></div>
+        </div>
+        <div class="dice">
+          <div class="top_right dots"></div>
+          <div class="centre dots"></div>
+          <div class="bottom_left dots"></div>
+        </div>
+        <div class="dice">
+          <div class="top_right dots"></div>
+          <div class="top_left dots"></div>
+          <div class="bottom_left dots"></div>
+          <div class="bottom_right dots"></div>
+        </div>
+        <div class="dice">
+          <div class="top_right dots"></div>
+          <div class="top_left dots"></div>
+          <div class="centre dots"></div>
+          <div class="bottom_left dots"></div>
+          <div class="bottom_right dots"></div>
+        </div>
+        <div class="dice">
+          <div class="top_right dots"></div>
+          <div class="right_centre dots"></div>
+          <div class="top_left dots"></div>
+          <div class="bottom_left dots"></div>
+          <div class="left_centre dots"></div>
+          <div class="bottom_right dots"></div>
+        </div>
+      </div>
+      
+      <div id="replay">
+        <button id="replay_btn">PLAY AGAIN</button>
+      </div>
+    </div>
+  </body>
+</html>
