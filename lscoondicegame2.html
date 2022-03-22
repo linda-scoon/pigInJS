@@ -1,3 +1,8 @@
+<!-- Description: Dice Game | Play page
+      Author: Linda Scoon
+      Date: 22/03/2022
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,25 +17,34 @@
     <div class="wrapper">
       <h1>Dice Game</h1>
 
-      <div>
-        <p id="player1"></p>
-        <p id="player1_score"></p>
-        <p id="player2"></p>
-        <p id="player2_score"></p>
-        <!-- fade this msg below in css -->
-        <p class="msg"></p>
+      <h3>Total Score Count</h3>
+      <div class="totals">
+        <table>
+          <tr>
+            <th id="player1"></th>
+            <th id="player1_score"></th>
+          </tr>
+          <tr>
+            <th id="player2"></th>
+            <th id="player2_score"></th>
+          </tr>
+        </table>
       </div>
 
-      <div class="score_tracker">
+      <p class="msg"></p>
+
+      <div class="current_score">
+        <h3>Current Turn Score:</h3>
         <h2 id="current_player"></h2>
         <h2 id="score"></h2>
       </div>
 
-      <div class="score_tracker">
+      <div class="play_btns">
         <button id="dice_btn">ROLL DICE</button>
         <button id="end_turn">END TURN</button>
       </div>
 
+      <!-- All the dice -->
       <div id="die">
         <div class="dice"><div class="centre dots"></div></div>
         <div class="dice">
@@ -64,10 +78,7 @@
           <div class="bottom_right dots"></div>
         </div>
       </div>
-      
-      <div id="replay">
-        <button id="replay_btn">PLAY AGAIN</button>
-      </div>
+      <button id="replay">PLAY AGAIN</button>
     </div>
   </body>
 </html>

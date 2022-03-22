@@ -1,53 +1,115 @@
-* {
+/*Description: Dice Game CSS
+  Author: Linda Scoon
+  Date: 22/03/2022
+*/
+
+/* whole programme */
+body {
   margin: 0;
   padding: 0;
+  background-color: gray;
 }
 h1 {
   text-align: center;
-  font-size: 100px;
+  font-size: 60px;
+  margin-bottom: 20px;
 }
-
+h3 {
+  text-align: center;
+}
 .wrapper {
-  height: 120vh;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 2%;
+  background-color: white;
+  padding: 5px 0 50px 0;
 }
 
+/* page one */
 #rules {
-  display: none;
+  padding: 0px 50px;
+}
+#rules p {
+  margin-bottom: 10px;
 }
 
-.score_tracker {
-  display: flex;
-  justify-content: space-evenly;
+.input_box {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
+  padding: 5px 50px;
+}
+.input_box input {
+  width: 250px;
+}
+.error {
+  border: 2px solid red;
 }
 
-.score_tracker h3 {
-  border: 2px solid black;
-  padding: 20px;
-  border-radius: 20px;
-  width: 100px;
+/* buttons */
+#setup_game,
+#replay,
+.play_btns button {
+  padding: 20px 50px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 4px 5px 10px rgb(219, 216, 216);
 }
-.score_tracker button {
-  border-radius: 20px;
+#setup_game:hover,
+#replay:hover,
+.dice:hover,
+.play_btns button:hover {
+  box-shadow: none;
+}
+
+/* page2 buttons */
+.play_btns button {
   width: 200px;
   height: 70px;
+  margin: 40px;
+  font-weight: 800;
+  color: whitesmoke;
+  background-color: rgb(72, 222, 241);
 }
-.score_tracker h2 {
-  padding: 20px;
-}
-
-#replay{
+#replay {
   display: none;
 }
 
+/**** page2 ****/
+/* overall scores table */
+.totals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.totals th {
+  padding: 0 20px;
+}
+
+/* current score and text message */
+.current_score,
+.play_btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.current_score h2 {
+  font-size: 30px;
+  margin: 0px 40px;
+}
+
+.msg {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(255, 0, 200);
+  font-weight: 800;
+}
+
+/* DICE */
 #die {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-
-/* DICE */
 .dice {
   border: 1px solid;
   border-radius: 10px;
@@ -56,13 +118,15 @@ h1 {
   margin-top: 20px;
   position: relative;
   display: none;
+  background-color: rgb(255, 0, 200);
+  border: none;
+  box-shadow: 3px 6px 10px rgb(138, 137, 137);
 }
 .dots {
   width: 40px;
   height: 40px;
-  border: 1px solid;
   border-radius: 50px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   position: absolute;
 }
 .top_right {
@@ -94,9 +158,13 @@ h1 {
   left: 135px;
 }
 
+/* accounting for smaller screens */
 @media screen and (max-width: 800px) {
   #die {
     display: grid;
     grid-template-rows: 1fr 1fr;
+  }
+  .totals {
+    margin: 0px 25% 15px;
   }
 }
